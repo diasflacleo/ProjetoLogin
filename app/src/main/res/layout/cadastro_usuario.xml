@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText_email_cadastro"
+        android:layout_width="208dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="27dp"
+        android:layout_marginTop="32dp"
+        android:hint="digite o email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editText_senha_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editText_senha_cadastro"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="38dp"
+        android:hint="digite a senha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editText_confirmacao_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email_cadastro" />
+
+
+    <EditText
+        android:id="@+id/editText_confirmacao_cadastro"
+        android:layout_width="211dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="38dp"
+        android:hint="confirmação de senha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/button_cadastrar_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_senha_cadastro" />
+
+
+    <Button
+        android:id="@+id/button_cadastrar_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ripple"
+        android:text="Cadastrar"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_confirmacao_cadastro"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

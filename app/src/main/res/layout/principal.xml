@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar_app"/-->
+
+
+
+    <Button
+        android:id="@+id/button_alterar_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:text="Alterar Usuário"
+        android:textColor="#ffffff"
+        android:background="@drawable/ripple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_ver_noticia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:drawableLeft="@android:drawable/ic_menu_view"
+        android:textColor="#ffffff"
+        android:background="@drawable/ripple"
+        android:text="Ver Notícia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_alterar_usuario" />
+
+    <Button
+        android:id="@+id/button_incluir_noticia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:drawableLeft="@android:drawable/ic_menu_agenda"
+        android:textColor="#ffffff"
+        android:background="@drawable/ripple"
+        android:text="Incluir Notícia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_ver_noticia" />
+
+    <Button
+        android:id="@+id/button_ir_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:drawableLeft="@android:drawable/sym_action_chat"
+        android:textColor="#ffffff"
+        android:background="@drawable/ripple"
+        android:text="Chat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_incluir_noticia" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <ListView
+        android:id="@+id/listView_lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ccffff">
+
+    </ListView>
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
